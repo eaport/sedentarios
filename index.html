@@ -1,134 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Comunidade Sedentária</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: url('https://via.placeholder.com/1600x800?text=Pessoa+no+sof%C3%A1+comendo+pizza') center/cover no-repeat;
-      height: 100vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 10px 20px;
-      border-radius: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 10px 20px;
-      border-radius: 10px;
-      margin: 20px 0;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .buttons a {
-      padding: 10px 20px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-    }
-
-    .btn-sofa {
-      background-color: #007bff;
-    }
-
-    .btn-legendario {
-      background-color: #ff0033;
-    }
-
-    section {
-      padding: 20px 20px;
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .mantras {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 10px;
-    }
-
-    .mantras div {
-      background-color: #eee;
-      padding: 20px;
-      border-radius: 10px;
-      font-size: 1.1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f4f4f4;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunidade dos Sedentários</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-
-  <header>
-    <h1>Enquanto eles sobem a montanha… a gente sobe o delivery no app.</h1>
-    <p>Uma comunidade de resistência contra a opressão do tênis de trilha, da mochila cargueira e do reels com música do Hans Zimmer.</p>
-    <div class="buttons">
-      <a href="#" class="btn-sofa">🔵 Quero ficar no sofá</a>
-      <a href="#" class="btn-legendario">Vermelho de zoeira: “Quero me tornar um legendário (não recomendado)”</a>
+<body class="bg-amber-50 text-zinc-800 font-sans">
+  <section class="max-w-4xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl font-bold mb-4">
+        Enquanto eles sobem a montanha...<br />
+        a gente sobe o delivery no app.
+      </h1>
+      <p class="mb-6">
+        Uma comunidade de resistência contra a corriqueira ostentação de trilha, marmita fitness e coach motivacional.
+      </p>
+      <div class="flex gap-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Quero ficar no sofá</button>
+        <button class="border border-red-400 text-red-600 px-4 py-2 rounded hover:bg-red-50">Quarome tomar legendro indo racon.</button>
+      </div>
     </div>
-  </header>
-
-  <section id="quem-somos">
-    <h2>Os verdadeiros resilientes.</h2>
-    <p>
-      Enquanto o mundo sobe montanhas com garra, nós ficamos firmes no nosso propósito: economizar joelho, evitar bolhas no pé e refletir sobre a vida com a barriga cheia. Somos a antítese do exagero. <br>
-      Aqui, ninguém precisa fingir superação todo domingo.
-    </p>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Homem com pizza no sofá" class="rounded-lg shadow-md">
   </section>
 
-  <section id="mantras">
-    <h2>Mantras Sedentários</h2>
-    <div class="mantras">
-      <div>🛋️ “Descansei, logo existo.”</div>
-      <div>🧃 “Quem quer subir a montanha, que vá. Minha montanha é o travesseiro.”</div>
-      <div>📱 “Transforme a sua jornada em um scroll sem fim.”</div>
-      <div>🐢 “Devagar? Não. Estático mesmo.”</div>
+  <section class="bg-yellow-100 py-12">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Os verdadeiros resilientes.</h2>
+      <p class="mb-8">
+        Enquanto o mundo sobe montanhas com garra, nós ficamos firmes no nosso propósito: economizar joelho, evitar bolhas e manter a barriga cheia. Somos a antítese do exagero. Aqui, ninguém precisa fingir superação todo domingo.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center text-sm">
+        <div class="p-4 bg-white rounded shadow">Descansei, logo existo.</div>
+        <div class="p-4 bg-white rounded shadow">Quem quer subir montanha que vá. Minha montanha é o travesseiro.</div>
+        <div class="p-4 bg-white rounded shadow">Transforme seu jantar em uma maratona de scroll infinito.</div>
+        <div class="p-4 bg-white rounded shadow">Devagar? Não. Estáticos mesmo.</div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 Comunidade Sedentária. Todos os direitos reservados.
-  </footer>
-
+  <section class="py-12 bg-amber-50">
+    <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Mantras Sedentários</h3>
+        <ul class="space-y-4">
+          <li>👕 Meu esporte é emocional.</li>
+          <li>☕ Não fui na minha, fui na minha série. Sem story.</li>
+          <li>🛋 Zen é não subir nada.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-4">O que os ‘Legendários’ falam e a gente rebate.</h3>
+        <form class="space-y-4">
+          <label class="block">
+            Cansou de subir montanha? Junte-se a nós:
+            <input type="email" class="mt-1 w-full border px-3 py-2 rounded" placeholder="seu@email.com" required />
+          </label>
+          <fieldset class="flex gap-4">
+            <legend class="font-medium">Nível de conforto:</legend>
+            <label><input type="radio" name="nivel" checked /> Leve</label>
+            <label><input type="radio" name="nivel" /> Intermediário</label>
+            <label><input type="radio" name="nivel" /> Avançado</label>
+          </fieldset>
+          <fieldset class="flex gap-4">
+            <legend class="font-medium">Última montanha que subiu?</legend>
+            <label><input type="radio" name="montanha" /> Na TV</label>
+            <label><input type="radio" name="montanha" /> No Instagram</label>
+          </fieldset>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
